@@ -1,0 +1,132 @@
+body{
+    font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 2.2rem;
+}
+#new{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#new:hover {
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    width: 50%;
+    height: auto;
+    padding: 4rem;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+fieldset{
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    border: 4px solid gray;
+    flex-direction: column;
+}
+#nameIn{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#nameIn::placeholder, #textIn::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #999;
+}
+#textIn{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    resize: none;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#submit{
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: gray;
+    padding: 0.5rem;
+    background: none;
+    border: 2px solid gray;
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+#submit:hover {
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+}
+.messageBox{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background-color: #fafafa;
+}
+#time{ 
+    font-size: 0.9rem;
+    color: #666;
+    text-align: right;
+}
+#user{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 0.3rem;
+}
+#text{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+    max-width: 600px;
+    
+}
+.container{
+    max-width: 960px; 
+    margin: 0 auto;
+    padding: 1rem;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f1f1f1;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #333;
+    border-top: 1px solid #ccc;
+}
+  
