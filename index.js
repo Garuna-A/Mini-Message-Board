@@ -1,15 +1,17 @@
 const fs = require("fs");
 const pg = require("pg");
+require("dotenv").config();
+
 
 const config = {
   user: "avnadmin",
-  password: "AVNS_BXVNKZ3oUwUzrQUFPpP",
+  password: process.env.AIVEN_PASSWORD,
   host: "messageboard-garuna-2005.j.aivencloud.com",
   port: "20140",
   database: "defaultdb",
   ssl: {
     rejectUnauthorized: true,
-    ca: fs.readFileSync("./ca.pem").toString(),
+    ca: fs.readFileSync("./ca (1).pem").toString(),
   },
 };
 
