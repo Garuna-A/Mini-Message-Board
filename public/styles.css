@@ -1,6 +1,5 @@
 body{
     font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow: hidden;
 }
 .header{
     display: flex;
